@@ -1,3 +1,4 @@
+
 /* ========================================
    CONFIGURAÇÕES GERAIS
 ======================================== */
@@ -40,25 +41,19 @@ h2 {
     font-size: 40px;
     font-weight: 500;
     color: #3F5F4A;
-
     text-align: center;
-
     margin-bottom: 45px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 20px;
 }
 
 h2::before,
 h2::after {
     content: "";
-
     width: 55px;
     height: 1px;
-
     background-color: #B8C7B2;
 }
 
@@ -102,45 +97,30 @@ header {
 header {
     background-color: #263B30;
     color: #F3EFE5;
-
     text-align: center;
-
     padding: 60px 20px 70px;
-
     position: relative;
 }
 
 header::after {
     content: "";
-
     position: absolute;
-
     bottom: 0;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 90px;
     height: 2px;
-
     background-color: #B8C7B2;
-
     opacity: 0.65;
 }
 
 .logo {
     width: 165px;
     max-height: 165px;
-
     object-fit: contain;
-
     display: block;
-
     margin: 0 auto 25px;
-
-    transition:
-        transform 0.4s ease,
-        opacity 0.4s ease;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .logo:hover {
@@ -150,25 +130,17 @@ header::after {
 
 header h1 {
     font-family: "Cormorant Garamond", serif;
-
     font-size: 54px;
-
     font-weight: 500;
-
     letter-spacing: 1.5px;
-
     line-height: 1.1;
 }
 
 header p {
     margin-top: 12px;
-
     color: #B8C7B2;
-
     font-size: 12px;
-
     letter-spacing: 4px;
-
     text-transform: uppercase;
 }
 
@@ -179,67 +151,45 @@ header p {
 
 .hero {
     background-color: #3F5F4A;
-
     margin-left: -30px;
     margin-right: -30px;
-
     padding: 85px 30px;
-
     text-align: center;
-
     color: #F3EFE5;
 }
 
 .frase {
     font-family: "Cormorant Garamond", serif;
-
     font-size: 32px;
-
     font-weight: 500;
-
     margin-bottom: 35px;
 }
 
 .botoes {
     display: flex;
-
     justify-content: center;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
 .botao {
     display: inline-block;
-
     padding: 14px 30px;
-
     background-color: #F3EFE5;
-
     color: #263B30;
-
     text-decoration: none;
-
     border-radius: 30px;
-
     font-size: 14px;
-
     font-weight: 500;
-
-    transition:
-        transform 0.3s ease,
-        background-color 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .botao:hover {
     background-color: #FFFFFF;
-
     transform: translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .botao:active {
@@ -248,15 +198,12 @@ header p {
 
 .botao-secundario {
     background-color: transparent;
-
     color: #F3EFE5;
-
     border: 1px solid #B8C7B2;
 }
 
 .botao-secundario:hover {
     background-color: #526F5A;
-
     border-color: #526F5A;
 }
 
@@ -271,90 +218,62 @@ header p {
 
 .lista-servicos {
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 22px;
 }
 
 .lista-servicos .servico:last-child {
     grid-column: 1 / -1;
-
     width: calc(50% - 11px);
-
     justify-self: center;
 }
 
 .servico {
     background-color: #FFFFFF;
-
     border: 1px solid #D8DED4;
-
     border-radius: 18px;
-
     padding: 25px;
-
     min-height: 180px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 20px;
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease,
-        border-color 0.35s ease;
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease,
+                border-color 0.35s ease;
 }
 
 .servico:hover {
     transform: translateY(-6px);
-
     border-color: #B8C7B2;
-
-    box-shadow:
-        0 14px 32px rgba(38, 59, 48, 0.12);
+    box-shadow: 0 14px 32px rgba(38, 59, 48, 0.12);
 }
 
 .servico-texto {
     flex: 1;
+    min-width: 0;
 }
 
 .servico h3 {
     font-family: "Cormorant Garamond", serif;
-
     color: #3F5F4A;
-
     font-size: 25px;
-
     font-weight: 600;
-
     margin-bottom: 8px;
 }
 
 .servico p {
     color: #69766D;
-
     font-size: 13px;
 }
 
 .servico img {
-    width: 125px;
-    height: 125px;
-
+    width: 140px;
+    height: 140px;
     object-fit: contain;
-
-    border-radius: 0;
-
-    padding: 0;
-
+    border-radius: 14px;
     flex-shrink: 0;
-
     display: block;
-
     transition: transform 0.35s ease;
 }
 
@@ -373,87 +292,56 @@ header p {
 
 .lista-valores {
     max-width: 850px;
-
     margin: auto;
-
     display: flex;
-
     flex-direction: column;
-
     gap: 14px;
 }
 
 .valor {
     background-color: #FFFFFF;
-
     border: 1px solid #D8DED4;
-
     border-radius: 16px;
-
     padding: 22px 28px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 20px;
-
     position: relative;
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .valor::before {
     content: "";
-
     width: 3px;
-
     height: 35px;
-
     background-color: #667A55;
-
     border-radius: 5px;
-
     position: absolute;
-
     left: 0;
-
     top: 50%;
-
     transform: translateY(-50%);
 }
 
 .valor:hover {
     transform: translateX(5px);
-
     border-color: #AAB9A5;
-
-    box-shadow:
-        0 8px 20px rgba(38, 59, 48, 0.08);
+    box-shadow: 0 8px 20px rgba(38, 59, 48, 0.08);
 }
 
 .valor h3 {
     font-family: "Cormorant Garamond", serif;
-
     color: #3F5F4A;
-
     font-size: 23px;
-
     font-weight: 600;
 }
 
 .valor strong {
     color: #3F5F4A;
-
     font-size: 15px;
-
     font-weight: 600;
-
     white-space: nowrap;
 }
 
@@ -464,18 +352,12 @@ header p {
 
 .localizacao {
     background-color: #667A55;
-
     color: #F3EFE5;
-
     padding: 65px 30px;
-
     border-radius: 22px;
-
     text-align: center;
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
 }
 
 .localizacao h2 {
@@ -489,9 +371,7 @@ header p {
 
 .localizacao p {
     font-size: 15px;
-
     color: #E7EBDD;
-
     margin-bottom: 25px;
 }
 
@@ -506,28 +386,18 @@ header p {
 
 #agendamento {
     text-align: center;
-
     background-color: #FFFFFF;
-
     border-radius: 24px;
-
     padding: 65px 30px;
-
     border: 1px solid #D8DED4;
-
-    box-shadow:
-        0 10px 35px rgba(38, 59, 48, 0.06);
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
+    box-shadow: 0 10px 35px rgba(38, 59, 48, 0.06);
+    transition: transform 0.35s ease,
+                box-shadow 0.35s ease;
 }
 
 #agendamento:hover {
     transform: translateY(-3px);
-
-    box-shadow:
-        0 15px 40px rgba(38, 59, 48, 0.10);
+    box-shadow: 0 15px 40px rgba(38, 59, 48, 0.10);
 }
 
 #agendamento h2 {
@@ -536,19 +406,14 @@ header p {
 
 #agendamento p {
     max-width: 650px;
-
     margin: 0 auto 30px;
-
     color: #69766D;
-
     font-size: 14px;
 }
 
 .botao-agendamento {
     background-color: #3F5F4A;
-
     color: #F3EFE5;
-
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -564,15 +429,10 @@ header p {
 
 footer {
     background-color: #1D2E25;
-
     color: #B8C7B2;
-
     text-align: center;
-
     padding: 35px 20px;
-
     font-size: 12px;
-
     margin-top: 30px;
 }
 
@@ -591,7 +451,6 @@ footer {
         margin-bottom: 70px;
     }
 
-
     /* CABEÇALHO */
 
     header {
@@ -600,9 +459,7 @@ footer {
 
     .logo {
         width: 125px;
-
         max-height: 125px;
-
         margin-bottom: 20px;
     }
 
@@ -612,16 +469,13 @@ footer {
 
     header p {
         font-size: 11px;
-
         letter-spacing: 3px;
     }
-
 
     /* TÍTULOS */
 
     h2 {
         font-size: 35px;
-
         gap: 12px;
     }
 
@@ -630,13 +484,11 @@ footer {
         width: 35px;
     }
 
-
-    /* HERO */
+    /* APRESENTAÇÃO */
 
     .hero {
         margin-left: -18px;
         margin-right: -18px;
-
         padding: 65px 20px;
     }
 
@@ -648,7 +500,6 @@ footer {
         padding: 13px 25px;
     }
 
-
     /* SERVIÇOS */
 
     .lista-servicos {
@@ -657,15 +508,12 @@ footer {
 
     .lista-servicos .servico:last-child {
         grid-column: auto;
-
         width: 100%;
-
         justify-self: auto;
     }
 
     .servico {
         min-height: 160px;
-
         padding: 20px;
     }
 
@@ -674,17 +522,15 @@ footer {
     }
 
     .servico img {
-        width: 105px;
-
-        height: 105px;
+        width: 120px;
+        height: 120px;
+        border-radius: 14px;
     }
-
 
     /* VALORES */
 
     .valor {
         padding: 20px;
-
         align-items: center;
     }
 
@@ -696,20 +542,17 @@ footer {
         font-size: 14px;
     }
 
-
     /* LOCALIZAÇÃO */
 
     .localizacao {
         padding: 50px 20px;
     }
 
-
     /* AGENDAMENTO */
 
     #agendamento {
         padding: 50px 20px;
     }
-
 }
 
 
@@ -725,7 +568,6 @@ footer {
 
     .logo {
         width: 105px;
-
         max-height: 105px;
     }
 
@@ -735,24 +577,31 @@ footer {
 
     .botoes {
         flex-direction: column;
-
         align-items: center;
     }
 
     .botao {
         width: 100%;
-
         max-width: 280px;
     }
 
     .servico {
         gap: 12px;
+        padding: 16px;
     }
 
     .servico img {
-        width: 90px;
+        width: 100px;
+        height: 100px;
+        border-radius: 12px;
+    }
 
-        height: 90px;
+    .servico h3 {
+        font-size: 21px;
+    }
+
+    .servico p {
+        font-size: 12px;
     }
 
     .valor {
@@ -765,7 +614,6 @@ footer {
 
     h2 {
         font-size: 32px;
-
         gap: 9px;
     }
 
@@ -773,5 +621,4 @@ footer {
     h2::after {
         width: 25px;
     }
-
 }
