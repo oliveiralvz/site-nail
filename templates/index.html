@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Poly Lima Nails</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <img
+            src="{{ url_for('static', filename='imagens/logo.png') }}"
+            alt="Logo Poly Lima Nails"
+            class="logo"
+        >
+
+        <h1>Poly Lima Nails</h1>
+
+        <p>Nail Designer</p>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+
+        <!-- APRESENTAÇÃO -->
+        <section class="hero">
+
+            <p class="frase">
+                Técnica, cuidado e acabamento impecável.
+            </p>
+
+            <div class="botoes">
+
+                <a href="#agendamento" class="botao">
+                    Agendar horário
+                </a>
+
+                <a
+                    href="https://wa.me/5511988688456?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Poly%20Lima%20Nails."
+                    class="botao botao-secundario"
+                >
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section class="servicos">
+
+            <h2>Serviços</h2>
+
+            <div class="lista-servicos">
+
+
+                <div class="servico">
+
+                    <div class="servico-texto">
+
+                        <h3>Blindagem</h3>
+
+                        <p>
+                            Proteção e fortalecimento
+                            das unhas naturais.
+                        </p>
+
+                    </div>
+
+                    <img
+                        src="{{ url_for('static', filename='imagens/blindagem.jpeg') }}"
+                        alt="Blindagem de unhas"
+                    >
+
+                </div>
+
+
+                <div class="servico">
+
+                    <div class="servico-texto">
+
+                        <h3>Fibra de Vidro</h3>
+
+                        <p>
+                            Alongamento com acabamento
+                            natural e resistente.
+                        </p>
+
+                    </div>
+
+                    <img
+                        src="{{ url_for('static', filename='imagens/fibra.jpeg') }}"
+                        alt="Alongamento de unhas em fibra de vidro"
+                    >
+
+                </div>
+
+
+                <div class="servico">
+
+                    <div class="servico-texto">
+
+                        <h3>Molde F1</h3>
+
+                        <p>
+                            Alongamento com molde
+                            e acabamento personalizado.
+                        </p>
+
+                    </div>
+
+                    <img
+                        src="{{ url_for('static', filename='imagens/molde-f1.jpeg') }}"
+                        alt="Unhas com molde F1"
+                    >
+
+                </div>
+
+
+                <div class="servico">
+
+                    <div class="servico-texto">
+
+                        <h3>Banho de Gel</h3>
+
+                        <p>
+                            Mais resistência e
+                            durabilidade para as unhas.
+                        </p>
+
+                    </div>
+
+                    <img
+                        src="{{ url_for('static', filename='imagens/banho-gel.jpeg') }}"
+                        alt="Banho de gel nas unhas"
+                    >
+
+                </div>
+
+
+                <div class="servico">
+
+                    <div class="servico-texto">
+
+                        <h3>Esmaltação em Gel</h3>
+
+                        <p>
+                            Cor e brilho com
+                            maior durabilidade.
+                        </p>
+
+                    </div>
+
+                    <img
+                        src="{{ url_for('static', filename='imagens/esmaltacao-gel.jpeg') }}"
+                        alt="Esmaltação em gel"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- VALORES -->
+        <section class="valores">
+
+            <h2>Valores</h2>
+
+            <div class="lista-valores">
+
+                <div class="valor">
+
+                    <h3>Blindagem</h3>
+
+                    <strong>
+                        R$ 154,00
+                    </strong>
+
+                </div>
+
+
+                <div class="valor">
+
+                    <h3>Fibra de Vidro</h3>
+
+                    <strong>
+                        R$ 300,00
+                    </strong>
+
+                </div>
+
+
+                <div class="valor">
+
+                    <h3>Molde F1</h3>
+
+                    <strong>
+                        R$ 250,00
+                    </strong>
+
+                </div>
+
+
+                <div class="valor">
+
+                    <h3>Banho de Gel</h3>
+
+                    <strong>
+                        Consulte
+                    </strong>
+
+                </div>
+
+
+                <div class="valor">
+
+                    <h3>Esmaltação em Gel</h3>
+
+                    <strong>
+                        R$ 95,00
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ATENDIMENTO -->
+        <section class="localizacao">
+
+            <h2>Atendimento</h2>
+
+            <p>
+                Rua Giovanni Di Paolo, 27
+            </p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Rua+Giovanni+Di+Paolo,+27"
+                target="_blank"
+                class="botao mapa"
+            >
+                Ver localização no Google Maps
+            </a>
+
+        </section>
+
+
+        <!-- AGENDAMENTO -->
+        <section id="agendamento">
+
+            <h2>Agende seu horário</h2>
+
+            <p>
+                Escolha o serviço desejado e entre em contato
+                pelo WhatsApp para consultar os horários
+                disponíveis e confirmar seu atendimento.
+            </p>
+
+            <a
+                href="https://wa.me/5511988688456?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Poly%20Lima%20Nails."
+                class="botao botao-agendamento"
+            >
+                Agendar pelo WhatsApp
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            © 2026 Poly Lima Nails
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
